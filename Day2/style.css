@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background-color: #0e0e0e;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 40px;
+  background: #1e1e1e;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #c5c5c5;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.download-btn {
+  background: #0078d4;
+  border: none;
+  padding: 8px 16px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+  gap: 40px;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #c5c5c5;
+  margin-bottom: 24px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.primary {
+  background: #0078d4;
+  border: none;
+  padding: 14px 24px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.small-text {
+  font-size: 13px;
+  color: #9d9d9d;
+}
+
+.small-text a {
+  color: #4daafc;
+  text-decoration: none;
+}
+
+.hero-image img {
+  max-width: 620px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+}
