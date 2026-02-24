@@ -23,12 +23,3 @@
 // console.log(suum(10));
 
 
-const fs = require("fs");
-const path = require("path");
-
-const filePath = path.join(__dirname, "a.txt");
-const data = fs.readFileSync(filePath, "utf-8");
-
-console.log(data);
-
-console.log("Hello World");
