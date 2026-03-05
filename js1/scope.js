@@ -6,8 +6,6 @@ console.log(a);
 }
 globalScope();
 
-
-
 // Local Scope
 
 function localScope(){
@@ -51,4 +49,6 @@ function blockScope(){
 
 
 }
-blockScope();
+blockScope(); 
+
+// scope Done
