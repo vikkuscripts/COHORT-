@@ -1,20 +1,20 @@
 
-// class Rectangle{
-//   constructor( width , height, color){
-//     this.width= width;
-//     this.height= height;
-//     this.color= color ;
+class Rectangle{
+  constructor( width , height, color){
+    this.width= width;
+    this.height= height;
+    this.color= color ;
 
-//   }
-//    area(){
-//     const area = this.width * this.height;
-//   return area;
-//    }
+  }
+   area(){
+    const area = this.width * this.height;
+  return area;
+   }
   
-//   paint(){
-//     console.log (`paniting with color ${this.color}`);
+  paint(){
+    console.log (`paniting with color ${this.color}`);
 
-//   }
+  }
  
 
 // }
