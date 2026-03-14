@@ -1,4 +1,4 @@
-// conditional statements 
+// conditional statements
 
 
 // let myName = "Vikram";
@@ -32,3 +32,12 @@
 // }
 
 
+
+let num1 = 800;
+if (num1 == 8) {
+  console.log("my name is vikram");
+} else if(num1 == 9){
+  console.log("my name is not vikram")
+}else{
+  console.log("num1 is not found ")
+}
