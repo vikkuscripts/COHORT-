@@ -259,3 +259,27 @@ async function safeApi(){
 
 }
 safeApi();
+
+function callBack() {
+  return new Promise(function (resolve) {
+
+    console.log("people miss offten");
+
+    setTimeout(function () {
+
+      resolve({
+        name: "bas",
+        role: "PArams"
+      });
+    }, 5000);
+  });
+}
+
+async function returnCallBAck() {
+  let user = await callBack();
+
+  console.log("the user name :", user.name);
+  console.log("the user role :", user.role);
+
+}
+returnCallBAck();
