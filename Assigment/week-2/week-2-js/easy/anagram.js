@@ -17,3 +17,13 @@ function isAnagram(str1, str2) {
 
 
 module.exports = isAnagram;
+function isAnagram(str1, str2) {
+  const sortedArray1 = str1.toLowerCase().split().sort().join();
+  const sortedArray2 = str2.toLowerCase().split().sort().join();
+
+  if (sortedArray1 == sortedArray2) {
+    return true;
+  } else {
+    false
+  }
+}

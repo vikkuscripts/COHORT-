@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <input type="text"></input>
+  <button onClick="addTodo()">Add todo</button>
+  <script>
+
+    function addTodo(){
+      const inputEl = document.querySelector("input");
+      const value = inputEl.value;
+
+      const newDivEl = document.createElement("div")
+      newDivEl.setAttribute("id","todo-"+ctr);
+
+      newDivEl.innerHTML = "<div>"+value+"</div><button onClick='deleteTodo("+ctr+")'>delete</button>";
+       
+      document.querySelector("body").appendChild(newDivEl);
+          ctr = ctr +  1;
+    }
+    let ctr = 1;
+    function deleteTodo(index){
+      console.log("delete has pressed");
+      const element = document.getElementById("todo-"+index);
+      element.parentNode.removeChild(element);
+    }
+  </script>
+
+</body>
+
+
+</html>
