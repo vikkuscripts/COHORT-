@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  
+ <input type="text"></input>
+ <button onclick="addTodo()">add todo</button>
+
+
+
+  <script>
+  //  function addTodo(){
+  //     const value = document.querySelector("input").value;
+ 
+  //     const spanEl = document.createElement("span");
+  //     const buttonEl = document.createElement("button");
+  //     spanEl.innerHTML = value;
+  //     buttonEl.innerHTML= "Delete";
+  //     // ////////
+
+  //     const newDivEl = document.createElement("div");
+  //     newDivEl.appendChild(spanEl);
+  //     newDivEl.appendChild(buttonEl);
+
+  //      document.querySelector("body").appendChild(newDivEl);
+  //  }
+
+  function addTodo(){
+    const value = document.querySelector("input").value;
+    const newSpan = document.createElement("span");
+    const btn = document.createElement("button");
+    newSpan.innerHTML = value;
+    btn.innerHTML = "delete";
+
+    const newDivEl = document.createElement("div");
+    newDivEl.appendChild(newSpan);
+    newDivEl.appendChild(btn);
+
+    document.querySelector("body").appendChild(newDivEl);
+  }
+
+
+    // function addTodo(){
+    //   const inputEl = document.querySelector("input");
+    //   const value = inputEl.value;
+
+    //   const newDivEl = document.createElement("div")
+    //   newDivEl.setAttribute("id","todo-"+ctr);
+
+    //   newDivEl.innerHTML = "<div>"+value+"</div><button onClick='deleteTodo("+ctr+")'>delete</button>";
+       
+    //   document.querySelector("body").appendChild(newDivEl);
+    //       ctr = ctr +  1;
+    // }
+
+
+  </script>
+</body>
+</html>
