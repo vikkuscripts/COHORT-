@@ -1,7 +1,2 @@
-function sum (){
-
-}
-function generateRandomNumber(){
-
-}
-console.log("ghar ja vikram");
+const path = require ("path");
+console.log(__dirname);
