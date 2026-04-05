@@ -14,22 +14,22 @@
 // }
 // main();
 
-const fs = require ("fs");
+// const fs = require ("fs");
 
-function main(fileName){
-  fs.readFile(fileName, "utf-8",function(err, data ){
+// function main(fileName){
+//   fs.readFile(fileName, "utf-8",function(err, data ){
 
-    let total = 0;
-      for(let i = 0 ; i < data.length; i++){
-        if(data[i] === " "){
-          total++; 
-        }
+//     let total = 0;
+//       for(let i = 0 ; i < data.length; i++){
+//         if(data[i] === " "){
+//           total++; 
+//         }
           
-      }
-       console.log(total)
-      });
-    }
-   main("file.txt");
+//       }
+//        console.log(total)
+//       });
+//     }
+//    main("a.txt");
 
 
 
@@ -70,4 +70,4 @@ function main(fileName){
   })
 }
 
-main("file.txt");
+main("a.txt");
